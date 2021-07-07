@@ -1,0 +1,30 @@
+# Usage:
+#   docker-compose up --force-recreate
+#   docker-compose stop
+version: '3'
+
+services:
+  #--------------#
+  zalenium:
+    image: "selenium/standalone-chrome"
+    container_name: zalenium
+    hostname: zalenium
+    ports:
+      - 4444:4444
+  teste:
+    volumes:
+      - ./target:/target
+    build: .
+    container_name: web-project-azure_teste
+    command: mvn test -Denv=des -Dbrowser=chrome  -Dcucumber.options="--tags @fichaPfCT001"
+    network_mode: host
+    depends_on:
+      - zalenium
+  start_dependencies:
+    image: dadarek/wait-for-dependencies
+    depends_on:
+      - zalenium
+    command: zalenium:4444
+
+
+
