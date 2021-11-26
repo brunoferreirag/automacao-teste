@@ -1,3 +1,0 @@
-name: sigo-api-logistica
-deploy:
-  - kubectl apply -f kubernetes.yaml
