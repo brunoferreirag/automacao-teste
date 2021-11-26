@@ -1,0 +1,11 @@
+trigger:
+- develop
+
+resources:
+  repositories:
+    - repository: devops-automation
+      type: git
+      name: Devops-Automation/Devops-Automation
+
+jobs:
+- template: conf_scripts/api-propmain-integration-init.yml@devops-automation

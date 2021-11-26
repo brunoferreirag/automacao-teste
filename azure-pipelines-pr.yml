@@ -1,0 +1,13 @@
+pr:
+  - master
+
+trigger: none
+
+resources:
+  repositories:
+    - repository: devops-automation
+      type: git
+      name: Devops-Automation/Devops-Automation
+
+jobs:
+- template: conf_scripts/api-propmain-init.yml@devops-automation
