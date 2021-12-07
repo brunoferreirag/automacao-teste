@@ -1,25 +1,25 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: sigo-api-automacao
+  name: sigo-api-auto
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: sigo-api-automacao
+      app: sigo-api-auto
   template:
     metadata:
       labels:
-        app: sigo-api-automacao
+        app: sigo-api-auto
     spec:
       nodeSelector:
         "beta.kubernetes.io/os": linux
       containers:
-      - name: sigo-api-automacao
+      - name: sigo-api-auto
         image: docker.io/brunoferreirag/sigo-api-automacao:latest
         ports:
         - containerPort: 8003
-          name: sigo-api-automacao
+          name: sigo-api-auto
         resources:
           requests:
             memory: "256Mi"
@@ -31,12 +31,12 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: sigo-api-automacao
+  name: sigo-api-auto
 spec:
   ports:
-    - name: sigo-api-automacao
+    - name: sigo-api-auto
       protocol: TCP
       port: 8003
   selector:
-    app: sigo-api-automacao
+    app: sigo-api-auto
 ---
