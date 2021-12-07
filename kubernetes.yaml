@@ -25,7 +25,7 @@ spec:
             memory: "512Mi"
             cpu: "512m"
           limits:
-            memory: "1024gb"
+            memory: "1024Mi"
             cpu: "1024m"
 ---
 apiVersion: v1
