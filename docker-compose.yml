@@ -1,0 +1,37 @@
+# Usage:
+#   docker-compose up --force-recreate
+#   docker-compose up --force-recreate --build -d
+#   docker-compose stop
+version: '3'
+
+services:
+  #--------------#
+  chrome:
+    volumes:
+      - ./target/chrome:/usr/target
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: playwright_chrome
+    ipc: host
+    command: mvn test "-Dcucumber.options=--tags '@cdcfull'" -Denv=des -Dbrowser=chrome -Dheadless=true allure:report
+
+  firefox:
+    volumes:
+      - ./target/firefox:/usr/target
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: playwright_firefox
+    ipc: host
+    command: mvn test "-Dcucumber.options=--tags '@cdcfull'" -Denv=des -Dbrowser=firefox -Dheadless=true allure:report
+  webkit:
+    volumes:
+      - ./target/webkit:/usr/target
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: playwright_webkit
+    ipc: host
+    command: mvn test "-Dcucumber.options=--tags '@cdcfull'" -Denv=des -Dbrowser=webkit -Dheadless=true allure:report
+

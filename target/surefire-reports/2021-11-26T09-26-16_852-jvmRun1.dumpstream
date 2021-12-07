@@ -1,0 +1,97 @@
+# Created at 2021-11-26T09:27:37.237
+TestSet has not finished before stream error has appeared >> initializing exit by non-null configuration: DEFAULT
+java.io.EOFException
+	at java.base/java.io.DataInputStream.readInt(DataInputStream.java:397)
+	at org.apache.maven.surefire.booter.MasterProcessCommand.decode(MasterProcessCommand.java:115)
+	at org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:391)
+	at java.base/java.lang.Thread.run(Thread.java:830)
+
+
+# Created at 2021-11-26T09:27:56.744
+Unexpected IOException with stream:     [32mE [0m[32mseleciono as opcoes de veiculo[0m                              [90m# VeiculoSteps.seleciono_as_opcoes_de_veiculo(DataTable)[0m
+
+
+# Created at 2021-11-26T09:27:57.222
+Unexpected IOException with stream:     [32mE [0m[32mclico em Proximo - Veiculo[0m                                  [90m# VeiculoSteps.clicoEmProximoVeiculo()[0m
+
+
+# Created at 2021-11-26T09:27:59.315
+Unexpected IOException with stream:     [32mE [0m[32mpreencho os valores da simulacao - parcela[0m                  [90m# SimulacaoSteps.preencho_os_valores_da_simulacao_parcela(DataTable)[0m
+
+
+# Created at 2021-11-26T09:27:59.318
+Unexpected IOException with stream: 
+
+
+# Created at 2021-11-26T09:27:59.319
+Unexpected IOException with stream:   @itensfinanciaveis
+
+
+# Created at 2021-11-26T09:27:59.321
+Unexpected IOException with stream:   Esquema do Cenario: CT001 - Adicionar item financiável a pré-proposta [90m# src/test/resources/features/itensFinanciaveis/Itens_Financiaveis.feature:53[0m
+
+
+# Created at 2021-11-26T09:27:59.550
+Unexpected IOException with stream:     [32mE [0m[32mclico na opção de incluir Itens Financiáveis[0m                      [90m# ItensFinanciaveisSteps.adicionarItem()[0m
+
+
+# Created at 2021-11-26T09:28:01.790
+Unexpected IOException with stream:     [32mE [0m[32mSeleciono o seguinte [0m[32m[1m"BLINDAGEM"[0m                                  [90m# ItensFinanciaveisSteps.selecionoOSeguinte(String)[0m
+
+
+# Created at 2021-11-26T09:28:02.117
+Unexpected IOException with stream:     [32mE [0m[32minformo o valor do item[0m                                           [90m# ItensFinanciaveisSteps.informoOValorDoItem(DataTable)[0m
+
+
+# Created at 2021-11-26T09:28:04.203
+Unexpected IOException with stream:     [32mE [0m[32mclico em adicionar[0m                                                [90m# ItensFinanciaveisSteps.clicoEmAdicionar()[0m
+
+
+# Created at 2021-11-26T09:28:08.395
+Unexpected IOException with stream:     [32mQuando [0m[32mclico no botao Calcular[0m                                      [90m# BaseSteps.clicoNoBotaoCalcular()[0m
+
+
+# Created at 2021-11-26T09:28:08.411
+Unexpected IOException with stream:     [32mE [0m[32mopto por não incluir o seguro auto integrado[0m                      [90m# BaseSteps.optoPorNãoIncluirOSeguroAutoIntegrado()[0m
+
+
+# Created at 2021-11-26T09:28:09.777
+Unexpected IOException with stream:     [32mEntao [0m[32mo item financiavel é adicionado no carrinho[0m                   [90m# ItensFinanciaveisSteps.oItemFinanciavelÉAdicionadoNoCarrinho()[0m
+
+
+# Created at 2021-11-26T09:28:09.792
+Unexpected IOException: 6,1,Itens financiaveis,CT001 - Adicionar item financi\00E1vel a pr\00E9-proposta(Itens financiaveis),null,null,null
+
+
+# Created at 2021-11-26T09:28:09.810
+Unexpected IOException with stream: 
+
+
+# Created at 2021-11-26T09:28:09.811
+Unexpected IOException with stream:   Contexto: Acessar a tela de simulação com usuario representante [90m# src/test/resources/features/itensFinanciaveis/Itens_Financiaveis.feature:11[0m
+
+
+# Created at 2021-11-26T09:28:09.812
+Unexpected IOException: 5,1,Itens financiaveis,CT001 - Adicionar item financi\00E1vel a pr\00E9-proposta(Itens financiaveis),null,null,null
+
+
+# Created at 2021-11-26T09:28:10.161
+Unexpected IOException with stream:     [32mDado [0m[32meu esteja na tela de login[0m                               [90m# LoginSteps.eu_esteja_na_tela_de_login()[0m
+
+
+# Created at 2021-11-26T09:28:10.180
+Unexpected IOException with stream:     [32mE [0m[32mque esteja logado com usuario representante[0m                 [90m# LoginSteps.que_esteja_logado_com_usuario_representante()[0m
+
+
+# Created at 2021-11-26T09:28:15.720
+Unexpected IOException with stream:     [32mE [0m[32meu seleciono a concessionaria[0m                               [90m# SelecaoLojaSteps.eu_seleciono_a_concessionaria(DataTable)[0m
+
+
+# Created at 2021-11-26T09:28:15.933
+Unexpected IOException with stream:     [32mE [0m[32mclico em Proximo[0m                                            [90m# BaseSteps.clico_em()[0m
+
+
+# Created at 2021-11-26T09:28:16.356
+Unexpected IOException with stream:     [32mE [0m[32mclico em Faca Uma Simulacao[0m                                 [90m# HomeSteps.clico_em()[0m
+
+

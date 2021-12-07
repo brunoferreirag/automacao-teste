@@ -1,0 +1,3 @@
+name: sigo-api-automacao
+deploy:
+  - kubectl apply -f kubernetes.yaml
