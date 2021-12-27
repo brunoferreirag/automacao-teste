@@ -33,6 +33,7 @@ kind: Service
 metadata:
   name: sigo-api-auto
 spec:
+  type: LoadBalancer 
   ports:
     - name: sigo-api-auto
       protocol: TCP
